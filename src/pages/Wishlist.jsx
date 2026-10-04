@@ -79,7 +79,7 @@ function Wishlist() {
 
                 <Link
                   to="/shop"
-                  className="mt-7 inline-flex items-center gap-2 rounded-md bg-black px-7 py-3 font-medium text-white transition hover:bg-neutral-800"
+                  className="mt-7 inline-flex items-center gap-2 rounded-md border border-black bg-white px-7 py-3 font-medium text-black transition hover:bg-black hover:text-white"
                 >
                   <FiShoppingBag size={18} />
                   Browse Products
