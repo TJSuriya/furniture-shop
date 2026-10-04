@@ -5,6 +5,12 @@ import {
 } from "react-icons/fi";
 
 function Hero() {
+  function handleExploreMore() {
+    document.getElementById("about")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+
   return (
     <section className="bg-neutral-100">
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 sm:px-8 md:grid-cols-2 md:gap-16 md:py-24">
@@ -36,12 +42,13 @@ function Hero() {
               <FiArrowRight size={18} />
             </Link>
 
-            <a
-              href="#about"
+            <button
+              type="button"
+              onClick={handleExploreMore}
               className="inline-flex items-center justify-center rounded-md border border-neutral-300 bg-white px-7 py-4 font-medium text-black transition hover:border-black"
             >
               Explore More
-            </a>
+            </button>
           </div>
 
           <div className="mt-10 grid max-w-lg grid-cols-2 gap-4 border-t border-neutral-300 pt-7">
