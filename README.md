@@ -1,19 +1,85 @@
-# React + Vite
+# Furni – Modern Furniture E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Furni is a modern and responsive furniture e-commerce website built with React and Tailwind CSS. It provides a clean shopping experience with product browsing, category filtering, search, wishlist, cart, and checkout functionality.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://tjsuriya.github.io/furniture-shop/
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+https://github.com/TJSuriya/furniture-shop
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Features
 
-## Expanding the ESLint configuration
+- Modern and responsive furniture website
+- Home page with hero and featured products
+- Product categories
+- Product search
+- Category-based filtering
+- Product details page
+- Add to cart
+- Increase and decrease product quantity
+- Wishlist functionality
+- Cart total calculation
+- Shipping calculation
+- Checkout form
+- Order success page
+- Responsive mobile navigation
+- GitHub Pages deployment
+- Client-side routing with React Router
+- Cart and wishlist data persistence using localStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React.js
+- JavaScript
+- Tailwind CSS
+- React Router
+- React Icons
+- Vite
+- HTML5
+- CSS3
+- Git & GitHub
+- GitHub Pages
+
+## Project Structure
+
+```text
+furniture-shop/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── CategorySection.jsx
+│   │   ├── ProductSection.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── FeaturesSection.jsx
+│   │   └── AboutSection.jsx
+│   │
+│   ├── context/
+│   │   ├── CartContext.jsx
+│   │   └── WishlistContext.jsx
+│   │
+│   ├── data/
+│   │   └── products.js
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Shop.jsx
+│   │   ├── ProductDetails.jsx
+│   │   ├── Wishlist.jsx
+│   │   ├── Cart.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── OrderSuccess.jsx
+│   │   └── NotFound.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+├── vite.config.js
+└── README.md
