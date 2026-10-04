@@ -53,7 +53,7 @@ function Cart() {
 
             <Link
               to="/shop"
-              className="inline-flex w-fit items-center gap-2 rounded-md border border-black px-5 py-3 text-sm font-medium transition hover:bg-black hover:text-white"
+              className="inline-flex w-fit items-center gap-2 rounded-md border border-black bg-white px-5 py-3 text-sm font-medium text-black transition hover:bg-black hover:text-white"
             >
               <FiArrowLeft size={17} />
               Continue Shopping
