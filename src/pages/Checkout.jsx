@@ -8,7 +8,6 @@ import {
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
 import { useCart } from "../context/CartContext";
 
 function Checkout() {
@@ -34,7 +33,9 @@ function Checkout() {
   const [error, setError] = useState("");
 
   const shipping =
-    cartTotal >= 500 ? 0 : 25;
+    cartTotal >= 500 || cartTotal === 0
+      ? 0
+      : 25;
 
   const grandTotal = cartTotal + shipping;
 
@@ -52,10 +53,9 @@ function Checkout() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    const hasEmptyField =
-      Object.values(formData).some(
-        (value) => value.trim() === ""
-      );
+    const hasEmptyField = Object.values(formData).some(
+      (value) => value.trim() === ""
+    );
 
     if (hasEmptyField) {
       setError("Please fill in all fields.");
@@ -137,6 +137,7 @@ function Checkout() {
             className="mt-10 grid gap-8 lg:grid-cols-[1fr_380px]"
           >
 
+            {/* Delivery Information */}
             <div className="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
 
               <h2 className="text-xl font-semibold">
@@ -275,6 +276,7 @@ function Checkout() {
 
             </div>
 
+            {/* Order Summary */}
             <div className="h-fit rounded-2xl bg-white p-6 shadow-sm lg:sticky lg:top-24">
 
               <h2 className="text-xl font-semibold">
@@ -305,11 +307,7 @@ function Checkout() {
                     </div>
 
                     <p className="text-sm font-medium">
-                      $
-                      {(
-                        item.price *
-                        item.quantity
-                      ).toFixed(2)}
+                      ${(item.price * item.quantity).toFixed(2)}
                     </p>
                   </div>
                 ))}
@@ -365,7 +363,6 @@ function Checkout() {
             </div>
 
           </form>
-
         </div>
       </main>
 

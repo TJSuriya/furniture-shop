@@ -96,7 +96,7 @@ function OrderSuccess() {
 
               <Link
                 to="/shop"
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-black px-6 py-3 font-medium text-white transition hover:bg-neutral-800"
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-black bg-white px-6 py-3 font-medium text-black transition hover:bg-black hover:text-white"
               >
                 <FiShoppingBag size={18} />
                 Continue Shopping

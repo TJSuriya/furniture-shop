@@ -64,7 +64,7 @@ function AboutSection() {
 
           <Link
             to="/shop"
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-black px-7 py-4 font-medium text-white transition hover:bg-neutral-800"
+            className="mt-8 inline-flex items-center gap-2 rounded-md border border-black bg-white px-7 py-4 font-medium text-black transition hover:bg-neutral-100"
           >
             Explore Our Collection
             <FiArrowRight size={18} />

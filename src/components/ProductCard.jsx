@@ -39,10 +39,10 @@ function ProductCard({ product }) {
               ? "Remove from wishlist"
               : "Add to wishlist"
           }
-          className={`absolute right-4 top-4 rounded-full p-3 shadow transition ${
+          className={`absolute right-4 top-4 rounded-full border border-black p-3 shadow transition ${
             liked
-              ? "bg-black text-white"
-              : "bg-white text-black hover:bg-black hover:text-white"
+              ? "bg-white text-black"
+              : "bg-white text-black hover:bg-neutral-100"
           }`}
         >
           <FiHeart
@@ -58,7 +58,7 @@ function ProductCard({ product }) {
         <button
           type="button"
           onClick={() => addToCart(product)}
-          className="absolute bottom-4 left-4 right-4 flex items-center justify-center gap-2 rounded-md bg-black py-3 text-sm font-medium text-white opacity-100 transition hover:bg-neutral-800 sm:opacity-0 sm:group-hover:opacity-100"
+          className="absolute bottom-4 left-4 right-4 flex items-center justify-center gap-2 rounded-md border border-black bg-white py-3 text-sm font-medium text-black opacity-100 transition hover:bg-neutral-100 sm:opacity-0 sm:group-hover:opacity-100"
         >
           <FiShoppingBag size={18} />
           Add to Cart

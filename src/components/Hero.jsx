@@ -30,7 +30,7 @@ function Hero() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link
               to="/shop"
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-black px-7 py-4 font-medium text-white transition hover:bg-neutral-800"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-7 py-4 font-medium text-black transition hover:bg-neutral-100"
             >
               Shop Collection
               <FiArrowRight size={18} />
@@ -38,7 +38,7 @@ function Hero() {
 
             <a
               href="#about"
-              className="inline-flex items-center justify-center rounded-md border border-neutral-300 bg-white px-7 py-4 font-medium transition hover:border-black"
+              className="inline-flex items-center justify-center rounded-md border border-neutral-300 bg-white px-7 py-4 font-medium text-black transition hover:border-black"
             >
               Explore More
             </a>

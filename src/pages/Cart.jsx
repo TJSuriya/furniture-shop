@@ -80,7 +80,7 @@ function Cart() {
 
                 <Link
                   to="/shop"
-                  className="mt-7 inline-flex items-center gap-2 rounded-md bg-black px-7 py-3 font-medium text-white transition hover:bg-neutral-800"
+                  className="mt-7 inline-flex items-center gap-2 rounded-md border border-black bg-white px-7 py-3 font-medium text-black transition hover:bg-black hover:text-white"
                 >
                   <FiShoppingBag size={18} />
                   Start Shopping
@@ -252,7 +252,7 @@ function Cart() {
 
                 <Link
                   to="/checkout"
-                  className="mt-6 flex w-full items-center justify-center rounded-md bg-black px-6 py-4 font-medium text-white transition hover:bg-neutral-800"
+                  className="mt-6 flex w-full items-center justify-center rounded-md border border-black bg-white px-6 py-4 font-medium text-black transition hover:bg-black hover:text-white"
                 >
                   Proceed to Checkout
                 </Link>
