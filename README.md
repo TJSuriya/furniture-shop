@@ -4,7 +4,8 @@ Furni is a modern and responsive furniture e-commerce website built with React a
 
 ## Live Demo
 
-https://tjsuriya.github.io/furniture-shop/
+https://furniture-shop-eight-silk.vercel.app/
+<!-- https://tjsuriya.github.io/furniture-shop/ -->
 
 ## GitHub Repository
 
