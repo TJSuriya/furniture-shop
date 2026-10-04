@@ -50,6 +50,20 @@ function Navbar() {
     setMenuOpen(false);
   }
 
+  function handleHomeSection(sectionId) {
+    closeMenu();
+
+    navigate("/");
+
+    setTimeout(() => {
+      document
+        .getElementById(sectionId)
+        ?.scrollIntoView({
+          behavior: "smooth"
+        });
+    }, 100);
+  }
+
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/95 backdrop-blur">
 
@@ -79,19 +93,21 @@ function Navbar() {
             Shop
           </Link>
 
-          <a
-            href="/#about"
+          <button
+            type="button"
+            onClick={() => handleHomeSection("about")}
             className="text-sm font-medium text-neutral-600 transition hover:text-black"
           >
             About
-          </a>
+          </button>
 
-          <a
-            href="/#contact"
+          <button
+            type="button"
+            onClick={() => handleHomeSection("contact")}
             className="text-sm font-medium text-neutral-600 transition hover:text-black"
           >
             Contact
-          </a>
+          </button>
 
         </div>
 
@@ -241,21 +257,21 @@ function Navbar() {
                 ` (${cartCount})`}
             </Link>
 
-            <a
-              href="/#about"
-              onClick={closeMenu}
-              className="font-medium"
+            <button
+              type="button"
+              onClick={() => handleHomeSection("about")}
+              className="text-left font-medium"
             >
               About
-            </a>
+            </button>
 
-            <a
-              href="/#contact"
-              onClick={closeMenu}
-              className="font-medium"
+            <button
+              type="button"
+              onClick={() => handleHomeSection("contact")}
+              className="text-left font-medium"
             >
               Contact
-            </a>
+            </button>
 
           </div>
 

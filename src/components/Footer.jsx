@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   FiArrowUpRight,
   FiInstagram,
@@ -7,12 +7,24 @@ import {
 } from "react-icons/fi";
 
 function Footer() {
+  const navigate = useNavigate();
+
   const shopLinks = [
     "Living Room",
     "Bedroom",
     "Dining Room",
     "Office"
   ];
+
+  const handleHomeSection = (sectionId) => {
+    navigate("/");
+
+    setTimeout(() => {
+      document.getElementById(sectionId)?.scrollIntoView({
+        behavior: "smooth"
+      });
+    }, 100);
+  };
 
   return (
     <footer
@@ -101,19 +113,21 @@ function Footer() {
 
             <div className="mt-5 space-y-3">
 
-              <a
-                href="/#about"
+              <button
+                type="button"
+                onClick={() => handleHomeSection("about")}
                 className="block text-sm text-neutral-400 transition hover:text-white"
               >
                 About Us
-              </a>
+              </button>
 
-              <a
-                href="/#contact"
+              <button
+                type="button"
+                onClick={() => handleHomeSection("contact")}
                 className="block text-sm text-neutral-400 transition hover:text-white"
               >
                 Contact
-              </a>
+              </button>
 
               <button
                 type="button"

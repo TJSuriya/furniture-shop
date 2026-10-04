@@ -1,5 +1,5 @@
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -20,7 +20,7 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
 
       <CartProvider>
 
@@ -74,7 +74,7 @@ function App() {
 
       </CartProvider>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
